@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.ApplicationForm {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.formApplication {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentForm {
+  flex-direction: column;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentModifier {
+  min-width: 210px;
+  display: flex;
+  border: 1px solid white;
+  justify-content: space-between;
+  align-items: center;
+}
+.roleModifier {
+  min-width: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputCustom,
+select {
+  border: none;
+  min-width: 180px;
+}
+
+.contentModifier span {
+  background-color: rgb(0, 0, 0);
+  border-right: 1px solid white;
+  cursor: default;
+}
+
+.contentModifier input {
+  margin-right: 3px;
+}
+label {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+select {
+  background-color: white;
+  margin-right: 3px;
+  padding: 1px;
+}
+
+.homeIcon {
+  position: absolute;
+  border: 2px solid transparent;
+  top: 88%;
+  left: 88%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 100%;
+}
+
+.homeIcon:link {
+  text-decoration: none;
+}
+
+.homeIcon:hover {
+  border: 2px solid black;
+  border-radius: 100%;
+  box-shadow: 1px 1px 20px 1px white;
+  background-color: white;
+  color: black;
+}
+
+.homeIcon:hover .homeIconText {
+  visibility: visible;
+}
+
+.homeIconText {
+  visibility: hidden;
+}
+
+.formButton {
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 18px;
+}
+
+.formButton:hover {
+  text-shadow: 0px 0px 5px white, 0px 0px 10px white, 0px 0px 15px white;
+  cursor: pointer;
+}
+
+.gradientBg {
+  padding: 0.25em;
+  background-image: linear-gradient(to bottom, red, blue);
+  animation: gradientBgAnimation 5s linear infinite;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.gradientBg:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientBgAnimation {
+  0% {
+    background-image: linear-gradient(to bottom, white, black);
+  }
+  14% {
+    background-image: linear-gradient(to bottom left, white, black);
+  }
+  29% {
+    background-image: linear-gradient(to left, white, black);
+  }
+  44% {
+    background-image: linear-gradient(to top left, white, black);
+  }
+  59% {
+    background-image: linear-gradient(to top, white, black);
+  }
+  74% {
+    background-image: linear-gradient(to top right, white, black);
+  }
+  89% {
+    background-image: linear-gradient(to right, white, black);
+  }
+  100% {
+    background-image: linear-gradient(to bottom right, white, black);
+  }
+}

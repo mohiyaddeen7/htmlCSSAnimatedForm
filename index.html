@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="formApplication">
+      <div class="gradientBg">
+        <form class="ApplicationForm">
+          <h1>Contact Form</h1>
+          <div class="contentForm">
+            <label for="firstName">First Name</label>
+            <div class="contentModifier">
+              <span class="material-symbols-outlined"> badge </span>
+              <input
+                class="inputCustom"
+                type="text"
+                id="firstName"
+                name="firstName"
+              />
+            </div>
+            <label for="lastName">Last Name</label>
+            <div class="contentModifier">
+              <span class="material-symbols-outlined"> badge </span>
+              <input
+                class="inputCustom"
+                type="text"
+                id="lastName"
+                name="lastName"
+              />
+            </div>
+            <label for="email">Email</label>
+            <div class="contentModifier">
+              <span class="material-symbols-outlined"> Email </span>
+              <input class="inputCustom" type="email" id="email" name="email" />
+            </div>
+            <label for="gender">Gender</label>
+            <div class="contentModifier">
+              <span class="material-symbols-outlined"> male </span>
+              <select name="gender" id="gender" style="cursor: pointer">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <span
+              style="
+                align-self: flex-start;
+                margin-top: 0.5rem;
+                padding: 0.5rem 0;
+                cursor: default;
+              "
+              >Roles</span
+            >
+            <div class="roleModifier">
+              <div class="ownerRole">
+                <span for="owner" style="cursor: default">Owner</span>
+                <input
+                  type="checkbox"
+                  id="owner"
+                  name="owner"
+                  value="Owner"
+                  class=""
+                  style="cursor: pointer"
+                />
+              </div>
+              <div class="adminRole">
+                <span for="admin" style="cursor: default">Admin</span>
+                <input
+                  type="checkbox"
+                  id="admin"
+                  name="admin"
+                  value="Admin"
+                  class=""
+                  style="cursor: pointer"
+                />
+              </div>
+              <div class="userRole">
+                <span for="user" style="cursor: default">User</span>
+                <input
+                  type="checkbox"
+                  id="user"
+                  name="user"
+                  value="User"
+                  class=""
+                  style="cursor: pointer"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="formButton">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div>
+      <a
+        href="#"
+        class="homeIcon hover:border-2 hover:border-solid hover:border-black border-transparent border-2 border-solid hover:rounded-3xl hover:shadow-3xl hover:bg-white hover:text-black transition-all"
+        ><span class="material-symbols-outlined"> home </span
+        ><span class="homeIconText invisible transition-all">Home</span></a
+      >
+    </div>
+  </body>
+</html>
